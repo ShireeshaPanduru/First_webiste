@@ -1,0 +1,174 @@
+<!DOCTYPE html/>
+<html>
+	<head>
+	<title>
+	CONTACT</title>
+	<link href = "file:///C:/sw/ice%20cream/css/contact.css" type = "text/css" rel = "stylesheet"/>
+	</head>
+	<script type="text/javascript">
+	var wss_i=0;
+	var wss_array=["file:///C:/sw/Logos/contact-1%20copy.jpg","file:///C:/sw/jpg/logo%20jpg/img1.jpg","file:///C:/sw/jpg/logo%20jpg/imh.webp", "file:///C:/sw/jpg/logo%20jpg/img3.jpg","file:///C:/sw/jpg/logo%20jpg/img4.jpg",
+	"file:///C:/sw/jpg/logo%20jpg/img6.jpg.jpg","file:///C:/sw/jpg/logo%20jpg/img8.jpg"];
+
+	
+	var spn;
+			function wssnext()
+				{
+					wss_i++;
+					
+					img.style.opacity=0;
+					
+					if(wss_i> (wss_array.length-1))
+					
+					{
+						wss_i=0;
+					}
+					 setTimeout("wssSlide()",1000);
+			
+				}
+			function wssSlide()
+				{
+					img.src=wss_array[wss_i];
+					
+					img.style.opacity=1;
+					
+					
+					
+					setTimeout("wssnext()",1000);
+				}
+				
+				
+				function abc()
+					{
+						var aa=document.getElementById('aa').value;
+						var bb=document.getElementById('bb').value;
+						var cc=document.getElementById('cc').value;
+						var dd=document.getElementById('dd').value;
+						var ee=document.getElementById('ee').value;
+						
+						
+						if(aa === "")
+						{
+							alert("plz ent first name ");
+							return false;
+						}
+							else if(bb === "")
+								{
+									alert("plz ent last name");
+									return false;
+								}
+							else if(cc === "")
+								{
+									alert("plz ent email address");
+									return false;
+								}
+							else if(dd === ""||ee=== "")
+								{
+									alert("plz ent contact no");
+									return false;
+								}
+								else if(ee === "")
+									{
+										alert("plz ent description");
+										return false;
+									}
+					
+								else
+								{
+									alert("submitted all details");
+									return true;
+								}
+						
+						
+						
+						
+				
+				}//close abc
+				
+				/*if (aa === "" || bb=== "" || cc=== "" || dd === "")
+		 
+						  {
+							alert("Please fill all the details")
+							   return false;
+							  }
+						  
+							   else
+									{
+								   return true;
+						  
+									}*/
+	</script>
+	
+	<body>
+	
+	<header id = "main_header1"> 
+	
+	<img id="wss"  width="1300px" height="350px" src="file:///C:/sw/Logos/contact-1%20copy.jpg"/>  
+	
+	</header>
+	
+	<form action="login page.html" method="post" onsubmit="return abc();">
+	
+	<div class = "center_all">
+	<div align= "center"><header id = "main_header2"> CONTACT US
+	</header></div>
+	
+	
+	<section id = "main_section">
+	<div align= "center"><header id = "header">Specify Contact Details</header></div>
+	
+	
+	<table id="t">
+	<tr><td>First Name</td>
+	<td><input  id="aa" size="40px" type="text" placeholder="First Name"/></td>
+	</tr>
+	<tr><td>Last Name</td>
+	<td><input id="bb" type="text" placeholder="Last Name"/></td>
+	<tr><td>Email Address</td>
+	<td><input id="cc" type="text" placeholder="gmail.com"/></td>
+	<tr><td>Contact No</td>
+	<td><input id="dd" type="text" placeholder="+91"/></td></tr>
+	<tr><td>How did you hear about<br><div align="left">us?*</div></td>
+	<td ><select><option>select
+	<option> social media
+	<option> newspaper</option></select></td>
+	</tr>
+	<tr><td >What are you looking<br><div align="left">for?</div></td>
+	<td><select><option>select..
+			<option> job</option></select></td>
+	</tr>
+	<td>Description</td>
+	<td><textarea id="ee" rows="10px" cols="10px" placeholder="message" ></textarea></td>
+	</tr>
+	</table>
+	
+	 <input id="left3" type="submit" value="submit"/>
+	 <input id="left4" type="reset" onsubmit="clr_it();" value="Clear"/>
+	
+	
+	</section>
+	<aside id="main_aside">
+	<header id="header1">ADDRESS ON MAP VIEW</header>
+	<header id="header2"></header>
+	</aside>
+	
+	</body>
+	
+	<script>
+	img=document.getElementById('wss');
+	
+	wssSlide();
+	  
+	</script>
+	
+	 </form>
+	 
+	</body>
+	
+<script type="text/javascript" src="jquery.js">
+	</script>
+	
+	<script type="text/javascript" src="file:///C:/Users/shire/OneDrive/Desktop/practice/js/jq.js">
+	</script>
+	
+	</html>
